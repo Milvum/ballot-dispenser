@@ -1,0 +1,51 @@
+{
+  "name": "ballot-dispenser",
+  "version": "0.0.1",
+  "description": "Exchanges Voting Passes for (anonymous) Voting Ballots using the BallotDispenser contract.  Under the hood this is a mixing service based on the Blindcoin protocol.",
+  "main": "build/main/App.js",
+  "typings": "build/main/App",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "pretest": "tsc",
+    "checkstyle": "tslint -c tslint.json 'src/**/*.ts' -t stylish",
+    "prestart": "tsc",
+    "test": "mocha --colors --recursive --require source-map-support/register build/test",
+    "build": "tsc",
+    "start": "node build/main/App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Milvum/ballot-dispenser.git"
+  },
+  "author": "Milvum",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "big-integer": "^1.6.25",
+    "body-parser": "^1.18.1",
+    "contracts": "file:../contracts",
+    "ethereum-blocks": "^1.0.3",
+    "express": "^4.15.4",
+    "helmet": "^3.8.1",
+    "node-rsa": "^0.4.2",
+    "typestate": "^1.0.4",
+    "validator": "^8.1.0",
+    "web3-instance": "../web3-instance",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.5",
+    "@types/chai": "^3.4.35",
+    "@types/express": "^4.0.37",
+    "@types/helmet": "0.0.36",
+    "@types/node-rsa": "^0.4.0",
+    "@types/validator": "^6.2.3",
+    "@types/winston": "^2.2.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "source-map-support": "^0.4.15",
+    "tslint": "^4.3.1",
+    "typescript": "^2.5.0"
+  }
+}

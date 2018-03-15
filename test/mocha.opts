@@ -1,0 +1,2 @@
+--recursive
+--require build/test/config.test.js

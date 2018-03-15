@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "build",
+    "rootDir": "src",
+    "declaration": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "allowUnreachableCode": false,
+    "strictNullChecks": true,
+    "noImplicitReturns": true
+  },
+  "exclude": [
+    "src/**/dashboard/*"
+  ],
+  "include": [
+    "src/**/*",
+    "node_modules/web3-typescript-typings/**/*"
+  ]
+}
